@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">appHola</string>
+
+    <string name="strtitulo">Primer Aplicación Móvil </string>
+    <string name="strtunombre">¿Cuál es tu nombre?</string>>
+    <string name="strpulsar">Dar click</string>
+    <string name="strlimpiar">Limpiar</string>
+    <string name="strcerrar">Cerrar</string>
 </resources>
