@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT ).show()
             }
             else{
-                strNombre= "Hola " + txtSaludo.text.toString() + " ,como estas "
+                strNombre= "Hola " + txtSaludo.text.toString() + " como estas?"
                 txtSaludo.setText(strNombre)
             }
         })
@@ -62,7 +63,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCerrar.setOnClickListener {
-            finish()
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("app Hola")
+            builder.setMessage(" ¿Deseas cerrar la aplicación?")
+            builder.setPositiveButton("ACCEPTAR"){
+                dialog , which -> finish()
+            }
+            builder.setNegativeButton("CANCELAR"){
+                dialog , which ->
+                Toast.makeText(applicationContext,
+                    "Continuamos con la app", Toast.LENGTH_SHORT).show()
+            }
+            builder.show()
         }
     }
 }

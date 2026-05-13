@@ -13,6 +13,7 @@
         android:orientation="vertical"
         android:paddingLeft="16sp"
         android:paddingRight="16sp"
+        android:background="@drawable/fondo_app"
         android:paddingBottom="16sp"
         android:paddingVertical="15sp">
         <TextView
@@ -20,8 +21,9 @@
             android:layout_height="wrap_content"
             android:text="@string/strtitulo"
             android:textSize="20sp"
-            android:textColor="@color/red"
+            android:textColor="@color/white"
             android:gravity="center"
+            android:background="@drawable/fondo_titulo"
             android:textStyle="bold">
         </TextView>
         <EditText
@@ -32,6 +34,11 @@
             android:id="@+id/txtnombre">
         </EditText>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Space>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
