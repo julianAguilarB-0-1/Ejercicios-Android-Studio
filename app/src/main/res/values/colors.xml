@@ -11,4 +11,8 @@
     <color name="rosa">#FF73C9</color>
     <color name="naranja">#FF8C00</color>
     <color name="grey">#C6C6D5</color>
+
+    <color name="titulo">#012095</color>
+    <color name="subtitulo">#767474</color>
+    <color name="aceptar">#ff4081</color>
 </resources>

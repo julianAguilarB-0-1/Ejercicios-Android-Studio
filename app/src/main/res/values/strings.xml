@@ -6,4 +6,19 @@
     <string name="strpulsar">Dar click</string>
     <string name="strlimpiar">Limpiar</string>
     <string name="strcerrar">Cerrar</string>
+
+
+    <string name="nombreEmpresa">SERVICIOS INFORMATICOS</string>
+    <string name="materia">Programación Móvil</string>
+    <string name="alumno">Julián Aguilar</string>
+    <string name="matricula">2023030573</string>
+
+    <string name="strhola">Hola</string>
+    <string name="strIMC">Cálculo IMC</string>
+    <string name="strgrdps">Grados</string>
+    <string name="strcotizacion">Cotización</string>
+    <string name="strspinner">Spinner</string>
+    <string name="strMonedas">Monedas</string>
+    <string name="strspre1">Preexamen 1</string>
+    <string name="strspre2">Preexamen 2</string>
 </resources>
