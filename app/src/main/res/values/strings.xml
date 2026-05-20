@@ -1,18 +1,19 @@
 <resources>
     <string name="app_name">appHola</string>
-
+    <!--Hola-->
     <string name="strtitulo">Primer Aplicación Móvil </string>
     <string name="strtunombre">¿Cuál es tu nombre?</string>>
     <string name="strpulsar">Dar click</string>
     <string name="strlimpiar">Limpiar</string>
     <string name="strcerrar">Cerrar</string>
 
-
+    <!--Info del estudiante-->
     <string name="nombreEmpresa">SERVICIOS INFORMATICOS</string>
     <string name="materia">Programación Móvil</string>
     <string name="alumno">Julián Aguilar</string>
     <string name="matricula">2023030573</string>
 
+    <!--Menu apps-->
     <string name="strhola">Hola</string>
     <string name="strIMC">Cálculo IMC</string>
     <string name="strgrdps">Grados</string>
@@ -21,4 +22,12 @@
     <string name="strMonedas">Monedas</string>
     <string name="strspre1">Preexamen 1</string>
     <string name="strspre2">Preexamen 2</string>
+    <string name="examen">EXAMEN</string>
+
+    <!--IMC-->
+    <string name="strCalcular">Calcular</string>
+    <string name="strAltura">Altura Ej. 1.80</string>
+    <string name="strPeso">Peso Ej. 90.5</string>
+    <string name="strResultado">Su resultado aqui</string>
+
 </resources>

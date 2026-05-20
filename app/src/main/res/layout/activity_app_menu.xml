@@ -277,7 +277,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@mipmap/pre1">
+                        android:src="@mipmap/pre2">
                     </ImageView>
                     <TextView
                         android:layout_width="wrap_content"
@@ -321,8 +321,44 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6sp"
+                app:cardCornerRadius="12sp"
+                android:layout_margin="12dp"
+                android:id="@+id/crvExamen">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16sp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/pre1">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/examen"
+                        android:textColor="@color/aceptar">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </GridLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strcerrar"
+            android:id="@+id/btnCerrar">
+        </Button>
     </LinearLayout>
 
   </ScrollView>

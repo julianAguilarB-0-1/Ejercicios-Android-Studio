@@ -2,7 +2,10 @@ package com.example.apphola
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
@@ -15,6 +18,7 @@ class appMenu : AppCompatActivity() {
     private lateinit var crvMonedas : CardView
     private lateinit var crvSpinner : CardView
     private lateinit var crvCotizacion : CardView
+    private lateinit var btnCerrar : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +41,7 @@ class appMenu : AppCompatActivity() {
         crvMonedas = findViewById<CardView>(R.id.crvMonedas)
         crvSpinner = findViewById<CardView>(R.id.crvSpinner)
         crvCotizacion = findViewById<CardView>(R.id.crvCotizacion)
+        btnCerrar = findViewById<Button>(R.id.btnCerrar)
     }
 
     fun eventosClick(){
@@ -44,6 +49,26 @@ class appMenu : AppCompatActivity() {
             //realizar un objeto intent para mostrar la actividad
             val intente = Intent(this, MainActivity::class.java)
             startActivity(intente)
+        }
+
+        crvIMC.setOnClickListener {
+            val intenteIMC = Intent(this, appIMC::class.java)
+            startActivity(intenteIMC)
+        }
+
+        btnCerrar.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Aplicación")
+            builder.setMessage(" ¿Deseas cerrar la aplicación?")
+            builder.setPositiveButton("ACCEPTAR"){
+                    dialog , which -> finish()
+            }
+            builder.setNegativeButton("CANCELAR"){
+                    dialog , which ->
+                Toast.makeText(applicationContext,
+                    "Continuamos con la app", Toast.LENGTH_SHORT).show()
+            }
+            builder.show()
         }
     }
 }
