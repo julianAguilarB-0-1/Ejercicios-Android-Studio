@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +20,9 @@ class appIMC : AppCompatActivity() {
     private lateinit var btnCalcular: Button
     private lateinit var btnLimpiar: Button
     private lateinit var btnCerrar: Button
+    private lateinit var img : ImageView
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +44,7 @@ class appIMC : AppCompatActivity() {
         btnCerrar = findViewById<Button>(R.id.btnCerrar)
         btnLimpiar = findViewById<Button>(R.id.btnLimpiar)
         btnCalcular = findViewById<Button>(R.id.btnCalcular)
+        img = findViewById<ImageView>(R.id.image)
     }
 
     fun eventosClick(){
@@ -52,10 +57,12 @@ class appIMC : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             }
             else if (txtAltura.text.toString().contentEquals(charSequence = "0") ||
-                txtPeso.text.toString().contentEquals(charSequence = "0")) {
+                txtPeso.text.toString().contentEquals(charSequence = "0") ||
+                txtPeso.text.toString().toFloat()<=0 ||
+                        txtAltura.text.toString().toFloat()<=0) {
 
                 Toast.makeText(
-                    applicationContext, "La altura y el peso no pueden ser cero",
+                    applicationContext, "La altura y el peso no pueden ser cero, ni negativos",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -63,14 +70,20 @@ class appIMC : AppCompatActivity() {
                 var altura: Float = txtAltura.text.toString().toFloat()
                 var peso: Float = txtPeso.text.toString().toFloat()
                 var imc: Float = 0.0f
-
                 imc = peso / (altura * altura)
                 txtResultado.text = imc.toString()
+
+                if(imc<18.5) img.setImageResource(R.mipmap.bajopeso)
+                if(imc>=18.5 && imc < 24.9) img.setImageResource(R.mipmap.pesonormal)
+                if(imc>=25 && imc < 29.9) img.setImageResource(R.mipmap.sobrepeso)
+                if(imc>=30) img.setImageResource(R.mipmap.obesidad)
+
             }
         })
 
         //limpiar y cerrar
         btnLimpiar.setOnClickListener {
+            img.setImageResource(R.mipmap.categorias)
             txtAltura.setText("")
             txtPeso.setText("")
             txtResultado.setText("Su resultado aqui")
