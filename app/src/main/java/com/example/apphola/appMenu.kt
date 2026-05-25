@@ -18,7 +18,7 @@ class appMenu : AppCompatActivity() {
     private lateinit var crvMonedas : CardView
     private lateinit var crvSpinner : CardView
     private lateinit var crvCotizacion : CardView
-    private lateinit var btnCerrar : Button
+    private lateinit var crvSalir : CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +41,7 @@ class appMenu : AppCompatActivity() {
         crvMonedas = findViewById<CardView>(R.id.crvMonedas)
         crvSpinner = findViewById<CardView>(R.id.crvSpinner)
         crvCotizacion = findViewById<CardView>(R.id.crvCotizacion)
-        btnCerrar = findViewById<Button>(R.id.btnCerrar)
+        crvSalir = findViewById<CardView>(R.id.crvSalir)
     }
 
     fun eventosClick(){
@@ -55,8 +55,12 @@ class appMenu : AppCompatActivity() {
             val intenteIMC = Intent(this, appIMC::class.java)
             startActivity(intenteIMC)
         }
+        crvGrados.setOnClickListener {
+            val intenteGrados = Intent(this, appGrados::class.java)
+            startActivity(intenteGrados)
+        }
 
-        btnCerrar.setOnClickListener {
+        crvSalir.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Aplicación")
             builder.setMessage(" ¿Deseas cerrar la aplicación?")

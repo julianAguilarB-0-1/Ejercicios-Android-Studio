@@ -6,6 +6,7 @@
     <string name="strpulsar">Dar click</string>
     <string name="strlimpiar">Limpiar</string>
     <string name="strcerrar">Cerrar</string>
+    <string name="strsalir">Salir</string>
 
     <!--Info del estudiante-->
     <string name="nombreEmpresa">SERVICIOS INFORMATICOS</string>
@@ -29,5 +30,14 @@
     <string name="strAltura">Altura Ej. 1.80</string>
     <string name="strPeso">Peso Ej. 90.5</string>
     <string name="strResultado">Su resultado aqui</string>
+
+
+    <!--grados-->
+    <string name="strCel">Celcius a Fahrenheit</string>
+    <string name="strFah">Fahrenheit a Celcius</string>
+    <string name="strGrados">Grados</string>
+    <string name="strCantidad">Cantidad</string>
+    <string name="strMensaje">Falto capturar cantidad</string>
+
 
 </resources>

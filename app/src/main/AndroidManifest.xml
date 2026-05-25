@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHola">
         <activity
+            android:name=".appGrados"
+            android:exported="false" />
+        <activity
             android:name=".appIMC"
             android:exported="false" />
         <activity
