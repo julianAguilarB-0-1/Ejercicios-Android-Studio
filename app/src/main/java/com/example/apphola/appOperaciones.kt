@@ -120,7 +120,6 @@ class appOperaciones : AppCompatActivity() {
 
                 return@setOnClickListener
             }
-
             // validar cero
             if(num1 == 0f || num2 == 0f){
 
@@ -135,10 +134,11 @@ class appOperaciones : AppCompatActivity() {
 
             // operaciones
             val resultado = when(pos){
-                0 -> num1 + num2
-                1 -> num1 - num2
-                2 -> num1 * num2
-                3 -> num1 / num2
+                0 -> num1 - num1
+                1 -> num1 + num2
+                2 -> num1 - num2
+                3 -> num1 * num2
+                4 -> num1 / num2
 
                 else -> 0.0f
             }
@@ -152,7 +152,7 @@ class appOperaciones : AppCompatActivity() {
             txtNum2.setText("")
             txtResultado.text = "Su resultado aqui"
             spnOperaciones.setSelection(0)
-            img.setImageResource(R.mipmap.bajopeso)
+            img.setImageResource(R.mipmap.operaciones)
         }
 
         // cerrar
