@@ -54,7 +54,6 @@
     <string name="strCantidadP">Cantidad de pesos</string>
     <string name="strBtnConvertir">Convertir</string>
 
-
     <!--app Operaciones-->
     <string-array name="operaciones">
         <item>Suma</item>

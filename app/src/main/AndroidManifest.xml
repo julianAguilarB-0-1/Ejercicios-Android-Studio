@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHola">
         <activity
+            android:name=".appOperaciones"
+            android:exported="false" />
+        <activity
             android:name=".appMonedas"
             android:exported="false" />
         <activity
