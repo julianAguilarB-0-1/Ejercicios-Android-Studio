@@ -39,5 +39,30 @@
     <string name="strCantidad">Cantidad</string>
     <string name="strMensaje">Falto capturar cantidad</string>
 
+    <!--app monedas-->
+    <string-array name="monedas">
+        <item>Dolar Americano</item>
+        <item>Dolar Canadiense</item>
+        <item>Euro</item>
+        <item>Libra Esterlinas</item>
+    </string-array>
+    <string name="dolarA">17.40</string>
+    <string name="dolarc">18.50</string>
+    <string name="euro">21.45</string>
+    <string name="libra">22.18</string>
+    <string name="strTituloMoneda">Convertidor de Monedas</string>
+    <string name="strCantidadP">Cantidad de pesos</string>
+    <string name="strBtnConvertir">Convertir</string>
 
+
+    <!--app Operaciones-->
+    <string-array name="operaciones">
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+    </string-array>
+    <string name="strTituloOP">Operaciones Básicas</string>
+    <string name="strnum1">Ingrese número 1</string>
+    <string name="strnum2">Ingrese número 2</string>
 </resources>
