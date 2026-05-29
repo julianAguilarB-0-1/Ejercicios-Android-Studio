@@ -56,12 +56,13 @@
 
     <!--app Operaciones-->
     <string-array name="operaciones">
-        <item>Suma</item>
-        <item>Resta</item>
-        <item>Multiplicacion</item>
-        <item>Division</item>
+        <item>suma</item>
+        <item>resta</item>
+        <item>multiplicacion</item>
+        <item>division</item>
     </string-array>
     <string name="strTituloOP">Operaciones Básicas</string>
     <string name="strnum1">Ingrese número 1</string>
     <string name="strnum2">Ingrese número 2</string>
+    <string name="strresultado">Resultado:</string>
 </resources>

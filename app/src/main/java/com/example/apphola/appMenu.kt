@@ -19,6 +19,7 @@ class appMenu : AppCompatActivity() {
     private lateinit var crvSpinner : CardView
     private lateinit var crvCotizacion : CardView
     private lateinit var crvSalir : CardView
+    private lateinit var crvpre1 : CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +43,7 @@ class appMenu : AppCompatActivity() {
         crvSpinner = findViewById<CardView>(R.id.crvSpinner)
         crvCotizacion = findViewById<CardView>(R.id.crvCotizacion)
         crvSalir = findViewById<CardView>(R.id.crvSalir)
+        crvpre1 = findViewById<CardView>(R.id.crvpre1)
     }
 
     fun eventosClick(){
@@ -62,6 +64,10 @@ class appMenu : AppCompatActivity() {
         crvMonedas.setOnClickListener {
             val intenteMoneda = Intent(this, appMonedas::class.java)
             startActivity(intenteMoneda)
+        }
+        crvpre1.setOnClickListener {
+            val intentePre1 = Intent(this, appOperaciones::class.java)
+            startActivity(intentePre1)
         }
 
         crvSalir.setOnClickListener {

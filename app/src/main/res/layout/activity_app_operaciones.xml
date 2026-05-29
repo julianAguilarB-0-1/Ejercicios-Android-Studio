@@ -7,4 +7,97 @@
     android:layout_height="match_parent"
     tools:context=".appOperaciones">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strTituloOP"
+            android:textColor="@color/white"
+            android:background="@color/titulo"
+            android:textAlignment="center"
+            android:paddingBottom="10sp"
+            android:paddingTop="10sp"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/strnum1"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:id="@+id/txtNum1">
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/strnum2"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:id="@+id/txtNum2">
+        </EditText>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:id="@+id/spnOperaciones">
+        </Spinner>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/operaciones"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:text="@string/strresultado"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txtResultado">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10sp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCalcular"
+                android:text="@string/strCalcular"
+                android:layout_weight="1">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLimpiar"
+                android:text="@string/strlimpiar"
+                android:layout_weight="1">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCerrar"
+                android:text="@string/strcerrar"
+                android:layout_weight="1">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
