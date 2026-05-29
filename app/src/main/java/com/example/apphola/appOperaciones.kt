@@ -1,6 +1,7 @@
 package com.example.apphola
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -26,10 +27,32 @@ class appOperaciones : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_app_operaciones)
+        iniciarComponentes()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    fun iniciarComponentes(){
+        txtNum1 = findViewById<EditText>(R.id.txtNum1)
+        txtNum2 = findViewById<EditText>(R.id.txtNum2)
+        spnOperaciones = findViewById<Spinner>(R.id.spnOperaciones)
+        img = findViewById<ImageView>(R.id.imgOp)
+        txtResultado = findViewById<TextView>(R.id.txtResultado)
+        btnCerrar = findViewById<Button>(R.id.btnCerrar)
+        btnLimpiar = findViewById<Button>(R.id.btnLimpiar)
+        btnCalcular = findViewById<Button>(R.id.btnCalcular)
+
+        // datos del array
+        val items = resources.getStringArray(R.array.operaciones)
+
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_list_item_1,
+            items
+        )
+        spnOperaciones.adapter = adapter
     }
 }
