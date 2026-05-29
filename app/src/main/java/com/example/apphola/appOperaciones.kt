@@ -112,7 +112,6 @@ class appOperaciones : AppCompatActivity() {
 
             // validar numeros
             if(num1 == null || num2 == null){
-
                 Toast.makeText(
                     this,
                     "Ingrese números válidos",
