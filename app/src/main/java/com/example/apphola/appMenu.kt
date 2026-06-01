@@ -44,6 +44,7 @@ class appMenu : AppCompatActivity() {
         crvCotizacion = findViewById<CardView>(R.id.crvCotizacion)
         crvSalir = findViewById<CardView>(R.id.crvSalir)
         crvpre1 = findViewById<CardView>(R.id.crvpre1)
+        crvCotizacion=findViewById<CardView>(R.id.crvCotizacion)
     }
 
     fun eventosClick(){
@@ -68,6 +69,10 @@ class appMenu : AppCompatActivity() {
         crvpre1.setOnClickListener {
             val intentePre1 = Intent(this, appOperaciones::class.java)
             startActivity(intentePre1)
+        }
+        crvCotizacion.setOnClickListener {
+            val intenteCotizacion = Intent(this, clienteActivity::class.java)
+            startActivity(intenteCotizacion)
         }
 
         crvSalir.setOnClickListener {

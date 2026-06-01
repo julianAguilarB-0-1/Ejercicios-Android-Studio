@@ -66,4 +66,20 @@
     <string name="strnum1">Ingrese número 1</string>
     <string name="strnum2">Ingrese número 2</string>
     <string name="strresultado">Resultado:</string>
+
+
+    <!--App Cotizacion-->
+    <string name="domicilio">Av Joaquin Escobar 9401</string>
+    <string name="ciudad">Mazatlan Sinaloa</string>
+    <string name="marca">Toyota</string>
+    <string name="cliente">Nombre del Cliente</string>
+    <string name="folio">Num. Folio</string>
+    <string name="des">Descripcion del Automovil</string>
+    <string name="precio">Valor del automovil</string>
+    <string name="po">Porcentaje de pago inicial</string>
+    <string name="plazos">Plazos</string>
+    <string name="pmensual">Pago Mensual</string>
+    <string name="pinicial">Pago Inicial</string>
+    <string name="tfin">Total a Financiar</string>
+
 </resources>
