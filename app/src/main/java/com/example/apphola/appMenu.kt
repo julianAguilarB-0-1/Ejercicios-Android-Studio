@@ -20,6 +20,7 @@ class appMenu : AppCompatActivity() {
     private lateinit var crvCotizacion : CardView
     private lateinit var crvSalir : CardView
     private lateinit var crvpre1 : CardView
+    private lateinit var crvpre2 : CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +45,7 @@ class appMenu : AppCompatActivity() {
         crvCotizacion = findViewById<CardView>(R.id.crvCotizacion)
         crvSalir = findViewById<CardView>(R.id.crvSalir)
         crvpre1 = findViewById<CardView>(R.id.crvpre1)
+        crvpre2 = findViewById<CardView>(R.id.crvpre2)
         crvCotizacion=findViewById<CardView>(R.id.crvCotizacion)
     }
 
@@ -69,6 +71,10 @@ class appMenu : AppCompatActivity() {
         crvpre1.setOnClickListener {
             val intentePre1 = Intent(this, appOperaciones::class.java)
             startActivity(intentePre1)
+        }
+        crvpre2.setOnClickListener {
+            val intentePre2 = Intent(this, nominaActivity::class.java)
+            startActivity(intentePre2)
         }
         crvCotizacion.setOnClickListener {
             val intenteCotizacion = Intent(this, clienteActivity::class.java)
