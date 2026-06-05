@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHola">
         <activity
+            android:name=".ReciboNominaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nominaActivity"
+            android:exported="false" />
+        <activity
             android:name=".clienteActivity"
             android:exported="false" />
         <activity
