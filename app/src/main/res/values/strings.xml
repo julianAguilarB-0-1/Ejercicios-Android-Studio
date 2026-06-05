@@ -82,4 +82,17 @@
     <string name="pinicial">Pago Inicial</string>
     <string name="tfin">Total a Financiar</string>
 
+    <!--Pre exmaen 2-->
+    <string name="nomina">Calculo de pago de Nomina</string>
+    <string name="trabajador">Nombre del trabajador</string>
+
+    <string name="numRecibo">Número del recibo</string>
+    <string name="name">Nombre</string>
+    <string name="horas">Horas Trabajadas</string>
+    <string name="horasE">Horas Extras</string>
+
+    <string name="subtotal">Subtotal</string>
+    <string name="impuesto">Impuesto</string>
+    <string name="totalpag">Total a Pagar</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.example.appholamundo
 import java.io.Serializable
+import kotlin.math.abs
 import kotlin.random.Random
 class Cotizacion:Serializable {
     var numCotizacion:Int=0
@@ -26,6 +27,6 @@ class Cotizacion:Serializable {
         return this.calcularTotalFin()/this.plazos
     }
     public fun generaFolio() :Int {
-        return Random(333).nextInt()%1001
+        return abs(Random.nextInt()%1001)
     }
 }
