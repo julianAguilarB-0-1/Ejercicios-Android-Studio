@@ -7,4 +7,59 @@
     android:layout_height="match_parent"
     tools:context=".nominaActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15sp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nomina"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:paddingBottom="15sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trabajador"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:paddingTop="15sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Captura el nombre"
+            android:paddingTop="15sp">
+        </EditText>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/images">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar">
+        </Button>
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar">
+        </Button>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
