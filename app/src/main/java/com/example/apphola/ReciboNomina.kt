@@ -36,7 +36,6 @@ class ReciboNomina : Serializable {
 
     fun calcularSubtotal():Float{
         val pagoHora = obtenerPagoHora()
-
         return (horasNormales * pagoHora) +
                 (horasExtra * pagoHora * 2)
     }

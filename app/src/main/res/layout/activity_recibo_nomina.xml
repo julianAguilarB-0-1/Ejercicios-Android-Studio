@@ -36,14 +36,12 @@
                 android:text="@string/numRecibo"
                 android:paddingRight="10sp">
             </TextView>
-
             <TextView
                 android:id="@+id/txtNumRecibo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/numRecibo">
             </TextView>
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

@@ -14,7 +14,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class nominaActivity : AppCompatActivity() {
-
     private lateinit var txtNombreT : EditText
     private lateinit var btnIngresar : Button
     private lateinit var btnRegresar : Button
