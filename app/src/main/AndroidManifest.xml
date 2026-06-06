@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHola">
         <activity
-            android:name=".ReciboNominaActivity"
+            android:name=".appMenu"
             android:exported="false" />
         <activity
             android:name=".nominaActivity"
@@ -39,7 +39,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".appMenu"
+            android:name=".ReciboNominaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

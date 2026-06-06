@@ -12,7 +12,7 @@
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtNomina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -21,28 +21,20 @@
         </TextView>
 
         <TextView
-            android:id="@+id/lblnumrecibo"
+            android:id="@+id/txtNumRecibo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Numero de Recibo:">
+            android:text="@string/numRecibo">
         </TextView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/lblnombre"
+                android:id="@+id/txtNombreT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:">
-            </TextView>
-            <TextView
-                android:id="@+id/txtName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/trabajador"
-                android:paddingLeft="70sp"
-                android:textColor="@color/red">
+                android:text="@string/trabajador">
             </TextView>
         </LinearLayout>
 
@@ -81,14 +73,13 @@
                 android:id="@+id/rbdAuxiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Auxiliar"
-                android:textSize="18sp"
+                android:checked="true"
                 android:paddingRight="30sp"
-                android:checked="true">
-            </RadioButton>
+                android:text="Auxiliar"
+                android:textSize="18sp"></RadioButton>
 
             <RadioButton
-                android:id="@+id/rbdAlbanil"
+                android:id="@+id/rbdAlbañil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
@@ -123,7 +114,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/txtTotal"
+            android:id="@+id/txtTotalpag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
