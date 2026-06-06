@@ -33,7 +33,7 @@
         </TextView>
 
         <EditText
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtNombreT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Captura el nombre"
