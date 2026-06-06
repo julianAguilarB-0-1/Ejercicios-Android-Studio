@@ -82,14 +82,9 @@ class ReciboNominaActivity : AppCompatActivity() {
 
             if (txtHorasNormal.text.toString().isEmpty() ||
                 txtHorasExtra.text.toString().isEmpty())
-            {
-                Toast.makeText(
-                    this,
-                    "Falto capturar algún dato",
-                    Toast.LENGTH_SHORT
-                ).show()
+            { Toast.makeText(this, "Falto capturar algún dato",
+                Toast.LENGTH_SHORT).show()
             }else{
-
                 val recibo = ReciboNomina()
 
                 recibo.nombre = txtNombreT.text.toString()

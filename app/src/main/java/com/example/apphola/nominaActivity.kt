@@ -42,7 +42,8 @@ class nominaActivity : AppCompatActivity() {
         btnIngresar.setOnClickListener(View.OnClickListener{
             if(txtNombreT.text.toString().contentEquals(charSequence = "")){
                 Toast.makeText(this,
-                    "Falto capturar el nombre del trabajador", Toast.LENGTH_SHORT).show();
+                    "Falto capturar el nombre del trabajador",
+                    Toast.LENGTH_SHORT).show();
                 txtNombreT.requestFocus()
             } else{
                 val intent= Intent(this, ReciboNominaActivity::class.java)
