@@ -17,7 +17,6 @@ class nominaActivity : AppCompatActivity() {
     private lateinit var txtNombreT : EditText
     private lateinit var btnIngresar : Button
     private lateinit var btnRegresar : Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
