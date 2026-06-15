@@ -114,24 +114,27 @@
             android:layout_weight="1">
         </Space>
 
-        <LinearLayout
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Registrar Cuenta"
-                android:id="@+id/btnRegistrarCuenta">
-            </Button>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Aplicar movimiento"
-                android:id="@+id/btnMovimiento">
-            </Button>
-        </LinearLayout>
+            android:text="Registrar Cuenta"
+            android:textSize="15sp"
+            android:id="@+id/btnRegistrarCuenta">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplicar movimiento"
+            android:textSize="15sp"
+            android:id="@+id/btnMovimiento">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strcerrar"
+            android:textSize="15sp"
+            android:id="@+id/btnCerrar">
+        </Button>
     </LinearLayout>
 
 </ScrollView>

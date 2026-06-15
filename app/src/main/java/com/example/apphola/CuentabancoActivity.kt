@@ -1,7 +1,9 @@
 package com.example.apphola
 
 import android.os.Bundle
+import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.appholamundo.CuentaBanco
 
@@ -23,6 +25,7 @@ class CuentabancoActivity : AppCompatActivity() {
 
     private lateinit var btnRegistrarCuenta: Button
     private lateinit var btnMovimiento: Button
+    private lateinit var btnCerrar: Button
 
     private var cuenta = CuentaBanco()
     private var cuentaRegistrada = false
@@ -53,6 +56,7 @@ class CuentabancoActivity : AppCompatActivity() {
 
         btnRegistrarCuenta = findViewById(R.id.btnRegistrarCuenta)
         btnMovimiento = findViewById(R.id.btnMovimiento)
+        btnCerrar = findViewById<Button>(R.id.btnCerrar)
 
         txtUsuario.text =
             "Usuario: " + intent.getStringExtra("usuario")
@@ -105,7 +109,9 @@ class CuentabancoActivity : AppCompatActivity() {
                 ).show()
             } else {
                 if (rdbConsulta.isChecked) {
-                    txtNSaldo.text = "Nuevo Saldo: $" + cuenta.obtenerSaldo()
+                    Toast.makeText(
+                        this, "Saldo actual: $" + cuenta.obtenerSaldo(),
+                        Toast.LENGTH_SHORT).show()
                 } else {
                     if (txtCBCantidad.text.toString().isEmpty()) {
                         Toast.makeText(
@@ -140,5 +146,20 @@ class CuentabancoActivity : AppCompatActivity() {
                 }
             }
         }
+        btnCerrar.setOnClickListener(View.OnClickListener{
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("App Banco")
+            builder.setMessage("¿Deseas cerrar la cuenta banco?")
+            builder.setPositiveButton("ACEPTAR"){ dialog, which -> finish()
+            }
+            builder.setNegativeButton("CANCELAR"){ dialog, which ->
+                Toast.makeText(
+                    applicationContext,
+                    "Continuamos con la app",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+            builder.show()
+        })
     }
 }
