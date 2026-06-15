@@ -136,5 +136,4 @@
             android:id="@+id/btnCerrar">
         </Button>
     </LinearLayout>
-
 </ScrollView>

@@ -101,7 +101,6 @@ class CuentabancoActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             }
         }
-
         btnMovimiento.setOnClickListener {
             if (!cuentaRegistrada) {
                 Toast.makeText(this, "Primero registre una cuenta",
