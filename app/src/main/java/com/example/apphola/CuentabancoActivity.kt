@@ -71,27 +71,16 @@ class CuentabancoActivity : AppCompatActivity() {
                 txtBanco.text.toString().isEmpty() ||
                 txtSaldo.text.toString().isEmpty()
             ) {
-
                 Toast.makeText(
-                    this,
-                    "Faltó capturar algún dato",
-                    Toast.LENGTH_SHORT
-                ).show()
+                    this, "Faltó capturar algún dato", Toast.LENGTH_SHORT).show()
 
             } else {
 
-                cuenta.numCuenta =
-                    txtNumCuenta.text.toString().toInt()
+                cuenta.numCuenta = txtNumCuenta.text.toString().toInt()
+                cuenta.nombreCliente = txtNombreCliente.text.toString()
 
-                cuenta.nombreCliente =
-                    txtNombreCliente.text.toString()
-
-                cuenta.banco =
-                    txtBanco.text.toString()
-
-                cuenta.saldo =
-                    txtSaldo.text.toString().toFloat()
-
+                cuenta.banco = txtBanco.text.toString()
+                cuenta.saldo = txtSaldo.text.toString().toFloat()
                 cuentaRegistrada = true
 
                 txtNSaldo.text =
