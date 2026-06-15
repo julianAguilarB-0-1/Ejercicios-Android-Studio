@@ -93,4 +93,17 @@
     <string name="impuesto">Impuesto</string>
     <string name="totalpag">Total a Pagar</string>
 
+
+    <!--Examen-->
+    <string name="user">admin</string>
+    <string name="pass">1234</string>
+    <string name="banco">BANORTE</string>
+    <string name="domiciio">Av. del Sol #34</string>
+
+    <string-array name="movimientos">
+        <item>Consultar</item>
+        <item>Retirar</item>
+        <item>Depositar</item>
+    </string-array>
+
 </resources>
