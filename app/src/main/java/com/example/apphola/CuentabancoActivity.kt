@@ -136,7 +136,6 @@ class CuentabancoActivity : AppCompatActivity() {
                                 Toast.makeText(
                                     this, "Retiro realizado",
                                     Toast.LENGTH_SHORT).show()
-
                             } else {
                                 Toast.makeText(this, "Saldo insuficiente",
                                     Toast.LENGTH_SHORT).show()
