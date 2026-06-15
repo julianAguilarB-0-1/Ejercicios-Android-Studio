@@ -41,9 +41,8 @@
             android:layout_height="wrap_content"
             android:paddingBottom="10sp"
             android:paddingTop="10sp"
-            android:text="Nombre del Banco"
+            android:text="@string/banco"
             android:textAlignment="center"
-            android:textColor="@color/red"
             android:textSize="20sp">
         </TextView>
         <TextView
@@ -51,7 +50,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="10sp"
             android:paddingTop="10sp"
-            android:text="Domicilio"
+            android:text="@string/domiciio"
             android:textAlignment="center"
             android:textColor="@color/red"
             android:textSize="20sp">
@@ -61,13 +60,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ingresar"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:id="@+id/btnIngresar">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Regresar"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:id="@+id/btnRegresar">
         </Button>
 
     </LinearLayout>
