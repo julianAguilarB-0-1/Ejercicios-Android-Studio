@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,18 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10sp">
+        android:padding="20sp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Usuario: "
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:id="@+id/txtUsuario">
         </TextView>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Numero de Cuenta"
+            android:inputType="number"
             android:id="@+id/txtNumCuenta">
         </EditText>
         <EditText
@@ -41,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Saldo"
+            android:inputType="numberDecimal"
             android:id="@+id/txtSaldo">
         </EditText>
 
@@ -131,4 +134,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
